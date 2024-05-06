@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container-descripcion-general {
+    background: #f6f1db;
+}
+
+.container-descripcion-general-contenido {
+    padding: 15px;
+}
+
+.descripcion-general-titulo {
+    text-align: center;
+    padding: 2px 0 2px 0;
+    box-shadow: 0px 1px 5px #e9e4ce;
+    border-radius: 5px;
+}
+
+.descripcion-general-subtitulo{
+    text-align: center;
+}
+
+.container-descripcion-general-imagenes {
+    display: flex;
+}
+
+.descripcion-general-imagenes {
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.descripcion-general-imagenes img{
+    width: 50px;
+    padding: 10px;
+}
