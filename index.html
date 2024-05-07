@@ -1,12 +1,11 @@
 <!-- Autores Obligatorio Santiago Menendez Nro.(262188) y Paula Poli Nro.(290343) -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
     <title>Trivia</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <body>
@@ -30,7 +29,7 @@
             Cada tema tiene un nombre y una descripcion. Cada pregunta es de un
             tema, tiene un nivel (1-muy facil,...,5-muy dificil), un texto que
             la describe y te apareceran varias respuestas, pero una sola es la
-            correcta.<br />Si la respondes bie, sumas 10 puntos, por cada error
+            correcta.<br>Si la respondes bie, sumas 10 puntos, por cada error
             pierdes un punto, ¡pero puede usar la ayuda!.
           </p>
           <p>
@@ -40,11 +39,11 @@
         </div>
         <div class="container-descripcion-general-imagenes">
           <div class="descripcion-general-imagenes">
-            <img src="./img/avatar.jpg" alt="avatar santiago menendez" />
+            <img src="./img/avatar.jpg" alt="avatar santiago menendez">
             <p>Santiago Menendez Nro(262188)</p>
           </div>
           <div class="descripcion-general-imagenes">
-            <img src="./img/avatar.jpg" alt="avatar paula poli" />
+            <img src="./img/avatar.jpg" alt="avatar paula poli">
             <p>Paula Poli Nro(290343)</p>
           </div>
         </div>
@@ -61,11 +60,11 @@
         <form class="container-gestion-temas-input">
           <div class="gestion-temas-input">
             <label>Nombre: </label>
-            <input type="text" />
+            <input type="text">
           </div>
           <div class="gestion-temas-input">
             <label>Descripcion: </label>
-            <input type="text" />
+            <input type="text">
           </div>
           <button type="submit" class="submit-gestion-temas">Agregar</button>
         </form>
@@ -85,6 +84,65 @@
           <ul>
             <li>Sin Datos</li>
           </ul>
+        </div>
+      </div>
+    </section>
+    <section class="container-gestion-preguntas">
+      <div class="container-gestion-preguntas-titulo">
+        <h1>GESTION DE PREGUNTAS</h1>
+      </div>
+      <div class="container-gestion-preguntas-contenido">
+        <div class="container-gestion-preguntas-subtitulo">
+          <h3>Alta de preguntas</h3>
+        </div>
+        <form>
+          <div class="container-gestion-preguntas-input-1">
+            <label for="tema" class="tema">Tema:</label>
+            <select id="tema" required>
+              <option value="">Seleccione un Tema</option>
+            </select>
+            <label for="nivel" class="nivel">Nivel:</label>
+            <input type="number" id="nivel" max="5" min="1" required>
+          </div>
+          <div class="container-gestion-preguntas-input-2">
+            <label for="pregunta">Texto de la pregunta:</label>
+            <input type="text" id="pregunta" required>
+            <label for="correcta">Respuesta correcta:</label>
+            <input type="text" id="correcta" required>
+            <label for="incorrecta">Respuesta incorrecta:</label>
+            <input type="text" id="incorrecta" required>
+            <input type="submit" value="Agregar" class="submit-gestion-preguntas">
+          </div>
+        </form>
+        <div>
+          <div class="container-gestion-preguntas-subtitulo">
+            <h3>Datos generales de preguntas</h3>
+          </div>
+          <div>
+            <p>Total de preguntas registradas: 0</p>
+            <p>Maximo dato obtenido por un jugador: sin datos</p>
+            <label>Preguntas registradas: </label>
+            <input type="radio" value="nivel-creciente" id="nivel-creciente" name="nivel">
+              <label for="nivel-creciente">
+                Orden nombre tema creciente/nivel creciente
+              </label>
+            <input type="radio" value="nivel-decreciente" id="nivel-decreciente" name="nivel">
+              <label for="nivel-decreciente">
+                Orden nombre tema decreciente/nivel decreciente
+              </label>
+            <div>
+              <table class="tabla">
+                <tr>
+                  <th>Nombre de tema</th>
+                  <th>Nivel</th>
+                  <th>Texto de la pregunta</th>
+                  <th>Respuesta correcta</th>
+                  <th>Respuestas incorrectas</th>
+                </tr>
+                <!--Cuando este la funcionalidad JS se completara la tabla-->
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </section>
