@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <section class="container-descripcion-general">
         <div class="descripcion-general-titulo">
@@ -17,16 +19,21 @@
             </div>
             <div>
                 <p>
-                    En este sitio podras crear temas, preguntas y jugar a nuestra version del conocido juego de Trivias.
+                    En este sitio podras crear temas, preguntas y jugar a nuestra version del conocido juego
+                    de Trivias.
                 </p>
                 <p>
                     Es una prueba de conocimientos generales con preguntas y respuestas.
                 </p>
                 <p>
-                    Cada tema tiene un nombre y una descripcion. Cada pregunta es de un tema, tiene un nivel (1-muy facil,...,5-muy dificil), un texto que la describe y te apareceran varias respuestas, pero una sola es la correcta.<br>Si la respondes bie, sumas 10 puntos, por cada error pierdes un punto, ¡pero puede usar la ayuda!.
+                    Cada tema tiene un nombre y una descripcion. Cada pregunta es de un tema, tiene un nivel
+                    (1-muy facil,...,5-muy dificil), un texto que la describe y te apareceran varias
+                    respuestas, pero una sola es la correcta.<br>Si la respondes bie, sumas 10 puntos, por
+                    cada error pierdes un punto, ¡pero puede usar la ayuda!.
                 </p>
                 <p>
-                    El sitio fue desarrollado en el 1er. semestre 2024- Programacion I - Universidad ORT Uruguay por:
+                    El sitio fue desarrollado en el 1er. semestre 2024- Programacion I - Universidad ORT
+                    Uruguay por:
                 </p>
             </div>
             <div class="container-descripcion-general-imagenes">
@@ -41,5 +48,46 @@
             </div>
         </div>
     </section>
+    <section class="container-gestion-temas">
+        <div class="container-gestion-temas-titulo">
+            <h1>GESTION DE TEMAS</h1>
+        </div>
+        <div class="container-gestion-temas-contenido">
+
+            <div class="container-gestion-temas-subtitulo">
+                <h3>Alta de temas</h3>
+            </div>
+            <div class="container-gestion-temas-input">
+                <div class="gestion-temas-input">
+                    <label>Nombre: </label>
+                    <input type="text">
+                </div>
+                <div class="gestion-temas-input">
+                    <label>Descripcion: </label>
+                    <input type="text">
+                </div>
+                <button>Agregar</button>
+            </div>
+            <div>
+                <div class="container-gestion-temas-subtitulo">
+                    <h3>Datos generales de temas</h3>
+                </div>
+                <p>Lista de temas (total de temas: 0)</p>
+                <ul>
+                    <li>
+                        Sin Datos
+                    </li>
+                </ul>
+                <p>Promedio de preguntas por tema (cantidad total de preguntas/cantidad total de temas): sin datos</p>
+                <p>Temas sin preguntas:</p>
+                <ul>
+                    <li>
+                        Sin Datos
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
