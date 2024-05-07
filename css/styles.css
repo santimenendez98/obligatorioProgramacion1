@@ -1,0 +1,33 @@
+.container-gestion-temas {
+    background: #ffd388;
+}
+
+.container-gestion-temas-titulo {
+    text-align: center;
+    padding: 2px 0 2px 0;
+    box-shadow: 0px 1px 5px #f6ca81;
+    border-radius: 5px;
+}
+
+.container-gestion-temas-contenido {
+    padding: 15px;
+}
+
+.container-gestion-temas-subtitulo {
+    text-align: center;
+}
+
+.container-gestion-temas-input {
+    display: flex;
+}
+
+.gestion-temas-input {
+    margin-right: 40px;
+}
+
+@media (max-width: 520px) {
+    .container-gestion-temas-input {
+        display: flex;
+        flex-direction: column;
+    }
+}
