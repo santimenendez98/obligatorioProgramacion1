@@ -5,6 +5,28 @@ body {
   padding: 0;
 }
 
+.container-header {
+  background: #e89c6c;
+}
+
+.container-imagen-trivia {
+  display:flex;
+  justify-content:center;
+}
+
+.container-imagen-trivia img {
+  width:200px;
+}
+
+.container-botones {
+  display:flex;
+  justify-content:center;
+}
+
+.container-botones a {
+  padding:15px 20px 0 10px;
+}
+
 .container-descripcion-general {
   background: #f6f1db;
 }
