@@ -10,21 +10,21 @@ body {
 }
 
 .container-imagen-trivia {
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
 }
 
 .container-imagen-trivia img {
-  width:200px;
+  width: 200px;
 }
 
 .container-botones {
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
 }
 
 .container-botones a {
-  padding:15px 20px 0 10px;
+  padding: 15px 20px 0 10px;
 }
 
 .container-descripcion-general {
@@ -60,6 +60,7 @@ body {
   width: 50px;
   padding: 10px;
 }
+
 .container-gestion-temas {
   background: #ffd388;
 }
@@ -110,7 +111,7 @@ body {
   margin-right: 142px;
 }
 
-.container-gestion-preguntas-input-2 label{
+.container-gestion-preguntas-input-2 label {
   margin-right: 25px;
 }
 
@@ -137,7 +138,7 @@ body {
     flex-direction: column;
     padding: 5px;
   }
-  
+
   .submit-gestion-temas {
     margin-top: 20px;
   }
@@ -148,4 +149,73 @@ body {
     display: flex;
     flex-direction: column;
   }
+}
+
+.contenedor-Ajugar {
+  background-color: #fbdccb
+}
+
+.titulo-ajugar {
+  text-align: center
+}
+
+.contenedor-configuracion {
+  text-align: center
+}
+
+.contenedor-temaaelegirYniveldejuego-etc {
+  display: flex;
+  margin-left: 20px;
+}
+
+.contenedor-temaAElegir {
+  padding: 20px 0 10px 0;
+}
+
+.contenedor-nivelDelJuegoYBoton {
+  padding: 20px 0 10px 0;
+}
+
+.contenedor-temaAElegir label {
+  margin-right: 50px;
+}
+
+.contenedor-nivelDelJuegoYBoton label {
+  margin-right: 50px;
+}
+
+.contenedor-texto-de-la-pregunta {
+  background-color: #e87c24;
+  width: 90%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contenedor-3-divs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-respuestas {
+  margin-bottom: 35px;
+}
+
+.contenedor-3-botones {
+  margin-bottom: 20px;
+}
+
+.contenedor-respuestas button {
+  background-color: #e87c24;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  margin-right: 15px;
+}
+
+.contenedor-juego {
+  text-align: center;
+}
+
+.contenedor-puntajeYPregunta {
+  padding: 15px;
 }
