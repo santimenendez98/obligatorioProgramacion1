@@ -164,6 +164,10 @@
   width: 40px;
 }
 
+.contenedor-tema select {
+  width: 177px;
+}
+
 .contenedor-texto-de-la-pregunta {
   display: flex;
   justify-content: center;
@@ -176,7 +180,7 @@
   margin-bottom: 25px;
 }
 
-.contenedor-3-divs {
+.contenedor-pregunta-respuesta {
   display: flex;
   flex-direction: column;
   align-items: center;
