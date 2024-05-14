@@ -1,4 +1,4 @@
-<!-- Autores Obligatorio Santiago Menendez Nro.(262188) y Paula Poli Nro.(290343) -->
+<!-- Autores Obligatorio Santiago Menéndez Nro.(262188) y Paula Poli Nro.(290343) -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -10,202 +10,160 @@
 </head>
 
 <body>
-  <section class="container-header">
-    <div class="container-imagen-trivia">
-      <img src="./img/trivia.jpeg">
+  <header id="container-header">
+    <div class="container-trivia-imagen">
+      <img src="./img/trivia.jpeg" alt="logo-trivia" class="imagen-trivia">
     </div>
-
     <nav class="container-botones">
-      <a href="#">Informacion General</a>
-      <a href="#">Administrar</a>
-      <a href="#">¡Jugar!</a>
+      <a href="#container-descripcion-general">Información General</a>
+      <a href="#container-gestion-temas">Administrar</a>
+      <a href="#contenedor-Ajugar">¡Jugar!</a>
     </nav>
-  </section>
-
-  <section class="container-descripcion-general">
+  </header>
+  <section id="container-descripcion-general">
     <div class="descripcion-general-titulo">
-      <h1>DESCRIPCION GENERAL</h1>
+      <h1>DESCRIPCIÓN GENERAL</h1>
     </div>
-    <div class="container-descripcion-general-contenido">
-      <div class="descripcion-general-subtitulo">
-        <h3>¿Que encontraras en este sitio?</h3>
-      </div>
-      <div>
-        <p>
-          En este sitio podras crear temas, preguntas y jugar a nuestra
-          version del conocido juego de Trivias.
-        </p>
-        <p>
-          Es una prueba de conocimientos generales con preguntas y respuestas.
-        </p>
-        <p>
-          Cada tema tiene un nombre y una descripcion. Cada pregunta es de un
-          tema, tiene un nivel (1-muy facil,...,5-muy dificil), un texto que
-          la describe y te apareceran varias respuestas, pero una sola es la
-          correcta.<br>Si la respondes bie, sumas 10 puntos, por cada error
-          pierdes un punto, ¡pero puede usar la ayuda!.
-        </p>
-        <p>
-          El sitio fue desarrollado en el 1er. semestre 2024- Programacion I -
-          Universidad ORT Uruguay por:
-        </p>
-      </div>
-      <div class="container-descripcion-general-imagenes">
-        <div class="descripcion-general-imagenes">
-          <img src="./img/avatar.jpg" alt="avatar santiago menendez">
-          <p>Santiago Menendez Nro(262188)</p>
-        </div>
-        <div class="descripcion-general-imagenes">
-          <img src="./img/foto.paula.png" alt="avatar paula poli">
-          <p>Paula Poli Nro(290343)</p>
-        </div>
-      </div>
-    </div>
+    <article>
+      <h3 class="descripcion-general-subtitulo">
+        ¿Qué encontrarás en este sitio?
+      </h3>
+      <p>
+        En este sitio podrás crear temas, preguntas y jugar a nuestra versión
+        del conocido juego de Trivias.
+      </p>
+      <p>
+        Es una prueba de conocimientos generales con preguntas y respuestas.
+      </p>
+      <p>
+        Cada tema tiene un nombre y una descripción. Cada pregunta es de un
+        tema, tiene un nivel (1-muy fácil,...,5-muy difícil), un texto que la
+        describe y te aparecerán varias respuestas, pero una sola es la
+        correcta.<br>Si la respondes bien, sumas 10 puntos, por cada error
+        pierdes un punto, ¡pero puedes usar la ayuda!.
+      </p>
+      <p>
+        El sitio fue desarrollado en el 1er. semestre 2024 - Programación I -
+        Universidad ORT Uruguay por:
+      </p>
+      <img src="./img/foto-perfil.png" alt="avatar Santiago Menéndez" class="descripcion-general-imagenes">
+      <p class="descripcion-general-parrafo">Santiago Menéndez Nro(262188)</p>
+      <img src="./img/foto.paula.png" alt="avatar Paula Poli" class="descripcion-general-imagenes">
+      <p class="descripcion-general-parrafo">Paula Poli Nro(290343)</p>
+    </article>
   </section>
-  <section class="container-gestion-temas">
+  <section id="container-gestion-temas">
     <div class="container-gestion-temas-titulo">
-      <h1>GESTION DE TEMAS</h1>
+      <h1>GESTIÓN DE TEMAS</h1>
     </div>
     <div class="container-gestion-temas-contenido">
-      <div class="container-gestion-temas-subtitulo">
-        <h3>Alta de temas</h3>
-      </div>
+      <h3 class="gestion-temas-subtitulo">Alta de temas</h3>
       <form class="container-gestion-temas-input">
-        <div class="gestion-temas-input">
-          <label>Nombre: </label>
-          <input type="text">
-        </div>
-        <div class="gestion-temas-input">
-          <label>Descripcion: </label>
-          <input type="text">
-        </div>
-        <button type="submit" class="submit-gestion-temas">Agregar</button>
+        <label class="gestion-temas-input">Nombre: </label>
+        <input type="text" maxlength="20" placeholder="Ingrese Nombre" required>
+        <label class="gestion-temas-input">Descripción: </label>
+        <input type="text" maxlength="40" placeholder="Ingrese la descripción" required>
+        <input type="button" class="submit-gestion-temas" value="Agregar">
       </form>
-      <div>
-        <div class="container-gestion-temas-subtitulo">
-          <h3>Datos generales de temas</h3>
-        </div>
-        <p>Lista de temas (total de temas: 0)</p>
-        <ul>
-          <li>Sin Datos</li>
-        </ul>
-        <p>
-          Promedio de preguntas por tema (cantidad total de preguntas/cantidad
-          total de temas): sin datos
-        </p>
-        <p>Temas sin preguntas:</p>
-        <ul>
-          <li>Sin Datos</li>
-        </ul>
-      </div>
+      <h3 class="gestion-temas-subtitulo">Datos generales de temas</h3>
+      <p>Lista de temas (total de temas: 0)</p>
+      <ul>
+        <li>Sin Datos</li>
+      </ul>
+      <p>
+        Promedio de preguntas por tema (cantidad total de preguntas/cantidad
+        total de temas): sin datos
+      </p>
+      <p>Temas sin preguntas:</p>
+      <ul>
+        <li>Sin Datos</li>
+      </ul>
     </div>
   </section>
-  <section class="container-gestion-preguntas">
+  <section id="container-gestion-preguntas">
     <div class="container-gestion-preguntas-titulo">
-      <h1>GESTION DE PREGUNTAS</h1>
+      <h1>GESTIÓN DE PREGUNTAS</h1>
     </div>
-    <div class="container-gestion-preguntas-contenido">
-      <div class="container-gestion-preguntas-subtitulo">
-        <h3>Alta de preguntas</h3>
+    <h3 class="gestion-preguntas-subtitulo">Alta de preguntas</h3>
+    <form>
+      <div class="container-gestion-preguntas-input-1">
+        <label for="tema" class="tema">Tema:</label>
+        <select id="tema" required>
+          <option value="">Seleccione un Tema</option>
+        </select>
+        <label for="nivel" class="nivel">Nivel:</label>
+        <input type="number" id="nivel" max="5" min="1" required>
       </div>
-      <form>
-        <div class="container-gestion-preguntas-input-1">
-          <label for="tema" class="tema">Tema:</label>
-          <select id="tema" required>
-            <option value="">Seleccione un Tema</option>
-          </select>
-          <label for="nivel" class="nivel">Nivel:</label>
-          <input type="number" id="nivel" max="5" min="1" required>
-        </div>
-        <div class="container-gestion-preguntas-input-2">
-          <label for="pregunta">Texto de la pregunta:</label>
-          <input type="text" id="pregunta" required>
-          <label for="correcta">Respuesta correcta:</label>
-          <input type="text" id="correcta" required>
-          <label for="incorrecta">Respuesta incorrecta:</label>
-          <input type="text" id="incorrecta" required>
-          <input type="submit" value="Agregar" class="submit-gestion-preguntas">
-        </div>
-      </form>
+      <div class="container-gestion-preguntas-input-2">
+        <label for="pregunta">Texto de la pregunta:</label>
+        <input type="text" id="pregunta" placeholder="Ingrese la pregunta" maxlength="40" required>
+        <label for="correcta">Respuesta correcta:</label>
+        <input type="text" id="correcta" placeholder="Ingrese la respuesta" maxlength="20" required>
+        <label for="incorrecta">Respuesta incorrecta:</label>
+        <input type="text" id="incorrecta" placeholder="Ingrese las incorrectas" maxlength="40" required>
+        <input type="button" value="Agregar" class="submit-gestion-preguntas">
+      </div>
+    </form>
+    <div>
+      <h3 class="gestion-preguntas-subtitulo">
+        Datos generales de preguntas
+      </h3>
       <div>
-        <div class="container-gestion-preguntas-subtitulo">
-          <h3>Datos generales de preguntas</h3>
-        </div>
-        <div>
-          <p>Total de preguntas registradas: 0</p>
-          <p>Maximo dato obtenido por un jugador: sin datos</p>
-          <label>Preguntas registradas: </label>
-          <input type="radio" value="nivel-creciente" id="nivel-creciente" name="nivel">
-          <label for="nivel-creciente">
-            Orden nombre tema creciente/nivel creciente
-          </label>
-          <input type="radio" value="nivel-decreciente" id="nivel-decreciente" name="nivel">
-          <label for="nivel-decreciente">
-            Orden nombre tema decreciente/nivel decreciente
-          </label>
-          <div>
-            <table class="tabla">
-              <tr>
-                <th>Nombre de tema</th>
-                <th>Nivel</th>
-                <th>Texto de la pregunta</th>
-                <th>Respuesta correcta</th>
-                <th>Respuestas incorrectas</th>
-              </tr>
-              <!--Cuando este la funcionalidad JS se completara la tabla-->
-            </table>
-          </div>
-        </div>
+        <p>Total de preguntas registradas: 0 preguntas</p>
+        <p>Máximo dato obtenido por un jugador: sin datos</p>
+        <label>Preguntas registradas: </label>
+        <input type="radio" value="nivel-creciente" id="nivel-creciente" name="nivel" checked>
+        <label for="nivel-creciente">
+          Orden nombre tema creciente/nivel creciente
+        </label>
+        <input type="radio" value="nivel-decreciente" id="nivel-decreciente" name="nivel">
+        <label for="nivel-decreciente">
+          Orden nombre tema decreciente/nivel decreciente
+        </label>
+        <table class="tabla">
+          <tr>
+            <th>Nombre de tema</th>
+            <th>Nivel</th>
+            <th>Texto de la pregunta</th>
+            <th>Respuesta correcta</th>
+            <th>Respuestas incorrectas</th>
+          </tr>
+          <!--Cuando esté la funcionalidad JS se completará la tabla-->
+        </table>
       </div>
     </div>
   </section>
-
-  <section class="contenedor-Ajugar">
+  <section id="contenedor-Ajugar">
     <div class="titulo-ajugar">
       <h1>¡A JUGAR!</h1>
     </div>
-    <div class="contenedor-contenido-ajugar-general">
-      <div class="contenedor-configuracion">
-        <h3>Configuración</h3>
-      </div>
-      <form>
-        <div class="contenedor-temaaelegirYniveldejuego-etc">
-          <div class="contenedor-temaAElegir">
-            <label for "temaAElegir" class="temaAElegir">Tema a elegir:</label>
-            <select id="temaAElegir" required>
-              <option value="">Seleccione un tema</option>
-            </select>
-          </div>
-          <div class="contenedor-nivelDelJuegoYBoton">
-            <label for "nivelDelJuego" class="nivelDelJuego">Nivel del juego</label>
-            <input type="number">
-            <button type="Jugar" value="Jugar" id="boton-jugar">Jugar</button>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="contenedor-juego">
-      <h3>Juego</h3>
-    </div>
-    <div class="contenedor-puntajeYPregunta">
-      <p>Puntaje acumulado en esta partida:</p>
-      <p>La pregunta es...:</p>
-    </div>
-    <div class="contenedor-3-divs">
-      <div class="contenedor-texto-de-la-pregunta">
-        <h3>TEXTO DE LA PREGUNTA</h3>
-      </div>
+    <h3 class="contenedor-ajugar-subtitulo">Configuración</h3>
+    <form class="contenedor-config-juego">
+      <label for="temaAElegir">Tema a elegir:</label>
+      <select id="temaAElegir" required>
+        <option value="">Seleccione un tema</option>
+      </select>
+      <label for="nivelDelJuego">Nivel del juego</label>
+      <input type="number" id="nivelDelJuego" required>
+      <input type="button" value="Jugar" id="boton-jugar">
+    </form>
+    <h3 class="contenedor-ajugar-subtitulo">Juego</h3>
+    <p>Puntaje acumulado en esta partida:</p>
+    <p>La pregunta es...:</p>
+    <form class="contenedor-pregunta-respuesta">
+      <p class="contenedor-texto-de-la-pregunta">TEXTO DE LA PREGUNTA</p>
       <div class="contenedor-respuestas">
-        <button type="Respuesta1" value="Respuesta1" id="boton=respuesta1">Respuesta 1</button>
-        <button type="Respuesta2" value="Respuesta2" id="boton=respuesta2">Respuesta 2</button>
-        <button type="Respuesta3" value="Respuesta3" id="boton=respuesta3">Respuesta 3</button>
+        <input type="button" value="Respuesta 1" id="boton-respuesta1">
+        <input type="button" value="Respuesta 2" id="boton-respuesta2">
+        <input type="button" value="Respuesta 3" id="boton-respuesta3">
       </div>
       <div class="contenedor-3-botones">
-        <button type="Ayuda" value="Ayuda" id="Ayuda">Ayuda</button>
-        <button type="Siguiente pregunta" value="Siguientepregunta" id="Siguiente pregunta">Siguiente pregunta</button>
-        <button type="Terminar" value="Terminar" id="Terminar">Terminar</button>
+        <input type="button" value="Ayuda" id="Ayuda">
+        <input type="button" value="Siguiente pregunta" id="Siguiente-pregunta">
+        <input type="button" value="Terminar" id="Terminar">
       </div>
-    </div>
+    </form>
   </section>
 </body>
+
 </html>
